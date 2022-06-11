@@ -1,0 +1,9 @@
+{{"<!-- start /partials/head.html -->" | safeHTML }}
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{else}}{{ .Page.Params.title }} — {{ .Site.Title }}{{end}}</title>
+<meta name="description" content="{{ .Site.Params.description }}">
+{{ $style := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{"<!-- end /partials/head.html -->" | safeHTML }}
