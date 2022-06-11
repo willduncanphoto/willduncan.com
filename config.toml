@@ -1,5 +1,12 @@
-baseURL = 'http://willduncan.com'
+baseURL = 'https://willduncan.com'
 languageCode = 'en-us'
-title = 'Photographer based in Santa Cruz, California'
-theme = 'baseline'
+title = 'William Duncan'
 
+theme = 'baseline'
+enableGitInfo = "true"
+
+[params]
+    author = "William Duncan"
+    description = "Photographer based in Santa Cruz, California"
+    phone = "(831)291-3818"
+    email = "hello@coldwaterchapel.com"

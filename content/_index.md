@@ -1,3 +1,3 @@
 ---
-title: "William Duncan"
+title: "Homepage"
 ---
