@@ -11,6 +11,10 @@ enableGitInfo = "true"
     phone = "(831)291-3818"
     email = "hello@coldwaterchapel.com"
 
+[permalinks]
+  posts = "/:year/:month/:day/:title/"
+  "/" = "/:slug/"
+
 [menu]
   [[menu.main]]
     name = "Posts"
