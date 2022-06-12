@@ -1,11 +1,9 @@
 baseURL = 'https://willduncan.com'
 languageCode = 'en-us'
+timeZone = "America/Los_Angeles"
 title = 'William Duncan'
-
 theme = 'baseline'
 enableGitInfo = "true"
-
-timeZone = "America/Los_Angeles"
 
 [params]
     author = "William Duncan"
