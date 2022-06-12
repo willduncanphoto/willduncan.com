@@ -10,3 +10,28 @@ enableGitInfo = "true"
     description = "Photographer based in Santa Cruz, California"
     phone = "(831)291-3818"
     email = "hello@coldwaterchapel.com"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    title = "posts"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    title = "about"
+    url = "/about/"
+    weight = 20
+
+  [[menu.main]]
+    name = "Projects"
+    title = "projects"
+    url = "/projects/"
+    weight = 30
+
+  [[menu.main]]
+    name = "Buy a print"
+    title = "But a print"
+    url = "/prints/"
+    weight = 40

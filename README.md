@@ -22,13 +22,15 @@
 - Fast
 - Cut costs to near $0
 - Ownership
-- Less dependencies
+- Control
 - Ethical
-- Flexible, Customizable
-- Level of transparency and accountability
+- Scales
+- Transparency
+- Less dependencies
 - Modern (webp, avif support)
-- Bring back RSS
 - Eleminate dependence of external services
+    - Social services
+- Bring back RSS
 
 ## Pages
 - Home
