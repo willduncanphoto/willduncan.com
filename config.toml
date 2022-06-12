@@ -5,6 +5,8 @@ title = 'William Duncan'
 theme = 'baseline'
 enableGitInfo = "true"
 
+timeZone = "America/Los_Angeles"
+
 [params]
     author = "William Duncan"
     description = "Photographer based in Santa Cruz, California"
