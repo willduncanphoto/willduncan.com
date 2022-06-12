@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{"<!-- start /_default/single.html -->" | safeHTML }}
 <h2>{{ .Title }}</h2>
-<div id="timestamp">{{ .Date.Format "January 2, 2006 @ 3:04 PM" }}</div>
+<div id="timestamp">{{ .Date.Format "January 2, 2006 @ 3:04 PM MST" }}</div>
 {{ .Content }}
 {{"<!-- end /_default/single.html -->" | safeHTML }}
 {{ end }}
