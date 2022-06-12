@@ -15,3 +15,34 @@
 
 ## Fixes
 - [ ] Pages URL
+
+## Notes
+
+### Goals
+- Fast
+- Cut costs to near $0
+- Ownership
+- Less dependencies
+- Ethical
+- Flexible, Customizable
+- Level of transparency and accountability
+- Modern (webp, avif support)
+- Bring back RSS
+- Eleminate dependence of external services
+
+## Pages
+- Home
+- About
+- Work
+- Posts
+- Buy a print
+- Contact
+- Review/Delivery
+
+### Post types
+- Singles
+- Packages
+- Articles
+- Links
+- Quotes
+
