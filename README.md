@@ -9,6 +9,7 @@
 - [x] Deploy to Cloudflare Pages
 - [ ] Figure out wtf I'm doing
 - [ ] Cloudflare Images
+- [ ] Ponder photography workflow / post types
 - [ ] Twitter cards
 - [x] Hugo timezone issue when deployed (-0700)
 - [ ] Move content to page bundles

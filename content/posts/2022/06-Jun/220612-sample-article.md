@@ -1,5 +1,5 @@
 ---
-title: "Sample Article"
+title: "Sample article"
 date: 2022-06-12T01:41:27-07:00
 draft: false
 ---
