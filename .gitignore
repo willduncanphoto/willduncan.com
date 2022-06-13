@@ -1,5 +1,6 @@
-# Hugo default output directory
+# Hugo folders
 /public
+/resources/_gen/
 
 # Hugo lock files
 .hugo_build.lock
