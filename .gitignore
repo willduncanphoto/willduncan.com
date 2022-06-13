@@ -20,4 +20,4 @@ $RECYCLE.BIN/
 node_modules
 
 # Custom
-/content/**/*.jpg
+content/*.jpg
