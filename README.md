@@ -6,11 +6,11 @@
 ## To-Do
 
 - [x] Configure Hugo locally
-- [ ] Deploy to Cloudflare Pages
+- [x] Deploy to Cloudflare Pages
 - [ ] Figure out wtf I'm doing
 - [ ] Cloudflare Images
 - [ ] Twitter cards
-- [ ] Hugo timezone issue when deployed (-0700)
+- [x] Hugo timezone issue when deployed (-0700)
 
 
 ## Fixes
@@ -24,7 +24,7 @@
 - Ownership
 - Control
 - Ethical
-- Scales
+- Scalable
 - Transparency
 - Less dependencies
 - Modern (webp, avif support)
@@ -48,3 +48,10 @@
 - Links
 - Quotes
 
+## Hugo notes
+- Cloudflare/Netlify require `TZ = /usr/share/zoneinfo/America/Los_Angeles` to display correct timezone formatting when using something like PDT.
+
+```
+HUGO_VERSION = 0.100.2
+TZ = /usr/share/zoneinfo/America/Los_Angeles
+```
