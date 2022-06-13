@@ -4,6 +4,5 @@
 
 [build.environment]
     HUGO_VERSION = "0.100.2"
-    HUGO_ENV = "production"
     TZ="/usr/share/zoneinfo/America/Los_Angeles"
 
