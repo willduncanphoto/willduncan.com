@@ -2,7 +2,7 @@
 {{"<!-- start /_default/list.html -->" | safeHTML }}
 {{ range where .Site.RegularPages "Type" "posts" }}
 <article>
-<h2>{{ .Date.Format "January 2, 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+<p>{{ .Date.Format "January 2, 2006 3:04 PM MST" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
 </article>
 {{ end }}
 {{"<!-- end /_default/list.html -->" | safeHTML }}
