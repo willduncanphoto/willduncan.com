@@ -11,6 +11,7 @@
 - [ ] Cloudflare Images
 - [ ] Twitter cards
 - [x] Hugo timezone issue when deployed (-0700)
+- [ ] Move content to page bundles
 
 
 ## Fixes
@@ -39,7 +40,7 @@
 - Posts
 - Buy a print
 - Contact
-- Review/Delivery
+- Clients/Review (seperate project)
 
 ### Post types
 - Singles
@@ -49,7 +50,8 @@
 - Quotes
 
 ## Hugo notes
-- Cloudflare/Netlify require `TZ = /usr/share/zoneinfo/America/Los_Angeles` to display correct timezone formatting when using something like PDT.
+
+Cloudflare/Netlify require `TZ = /usr/share/zoneinfo/America/Los_Angeles` to display correct timezone formatting when using something like PDT. Without it, they will display -0700 in place of MST.
 
 ```
 HUGO_VERSION = 0.100.2
