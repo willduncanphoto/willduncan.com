@@ -25,27 +25,37 @@ I always felt like I could do anything. That’s the main thing people are contr
 
 1. First list item
 2. Second list item
-3. Third list item
-4. Fourth list item
     - First nested list item
         - Second nested list item
-5. Fifth list item
+5. Third list item
 
 ## Bullet List
 
 - First list item
 - Second list item
-- Third list item
-- Fourth list item
     - First nested list item
         - Second nested list item
-- Fifth list item
+- Third list item
+
+## Task lists
+
+- [x] Completed task
+- [ ] Something I have put off for weeks
+- [ ] Another bad idea
 
 ## Code
 
-You can add `inline` code. Or go big and post a block of code:
+You can add `inline` code. Or go big and post a block of code.
+
 ```
 baseURL = 'https://willduncan.com'
 languageCode = 'en-us'
 timeZone = 'America/Los_Angeles'
 ```
+
+## Quotes
+
+> I don't know what's better, getting laid or getting paid.  
+> I just know when I'm getting one, the other's getting away.  
+> _-- Kanye Omari West_
+
