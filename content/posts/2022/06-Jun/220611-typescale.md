@@ -40,3 +40,12 @@ I always felt like I could do anything. That’s the main thing people are contr
     - First nested list item
         - Second nested list item
 - Fifth list item
+
+## Code
+
+You can add `inline` code. Or go big and post a block of code:
+```
+baseURL = 'https://willduncan.com'
+languageCode = 'en-us'
+timeZone = 'America/Los_Angeles'
+```
