@@ -1,12 +1,16 @@
 <figure>
-<img width="100%" srcset="
-    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=1200,sharpen=1,
-    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=980,sharpen=1,
-    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=640,sharpen=1
-    " 
-    src="https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}w=100,sharpen=.5"
+    <img
+  width="100%"
+  srcset="
+    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=320   320w,
+    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=640   640w,
+    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=960   960w,
+    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=1280 1280w,
+    https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=1800 2560w
+  "
+  src="https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=100"
 />
 <figcaption>
-    {{ .Page.Params.caption | safeHTML }}{{ with $.Page.Params.source}} Client: {{ $.Page.Params.source }}{{end}} 
+{{ .Page.Params.caption | safeHTML }}{{ with $.Page.Params.source}} Client: {{ $.Page.Params.source }}{{end}} 
 </figcaption>
 </figure>
