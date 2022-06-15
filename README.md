@@ -13,6 +13,8 @@
 - [ ] Twitter cards
 - [x] Hugo timezone issue when deployed (-0700)
 - [ ] Move content to page bundles
+- [ ] Research markdown render hooks
+- [ ] srcset
 
 
 ## Fixes
