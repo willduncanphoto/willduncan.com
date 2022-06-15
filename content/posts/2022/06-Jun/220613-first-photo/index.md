@@ -13,6 +13,6 @@ shutter: "1/200"
 aperture: "1.7"
 ---
 
-{{< cf_image >}}
+{{< cfimg >}}
 
 It's impressive how much drone technology has advanced in such a short time. The base model mini drones are capable of things I couldn't imagine being able to do most of my career.

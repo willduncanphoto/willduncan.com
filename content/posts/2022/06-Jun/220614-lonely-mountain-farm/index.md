@@ -12,4 +12,4 @@ shutter: "1/200"
 aperture: "2.8"
 ---
 
-{{< cf_image >}}
+{{< cfimg >}}
