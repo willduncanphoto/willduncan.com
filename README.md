@@ -16,6 +16,7 @@
 - [ ] Research markdown render hooks
 - [ ] srcset
 - [ ] disable webp when possible, until then, meh
+- [ ] width / height of images?
 
 
 ## Fixes
