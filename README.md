@@ -15,6 +15,7 @@
 - [ ] Move content to page bundles
 - [ ] Research markdown render hooks
 - [ ] srcset
+- [ ] disable webp when possible, until then, meh
 
 
 ## Fixes
