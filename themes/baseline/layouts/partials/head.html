@@ -4,6 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{else}}{{ .Page.Params.title }} — {{ .Site.Title }}{{end}}</title>
 <meta name="description" content="{{ .Site.Params.description }}">
+{{ $norm := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $norm.RelPermalink }}">
 {{ $style := resources.Get "css/main.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 {{"<!-- end /partials/head.html -->" | safeHTML }}

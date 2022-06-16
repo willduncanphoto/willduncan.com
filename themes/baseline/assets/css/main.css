@@ -1,28 +1,5 @@
-body {
+html {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    margin: 0;
-    background: #ffffff;
-    color: black;
-    font-size: 1em;
-    line-height: 1.5;
-    }
-    
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section,
-summary {
-    display: block;
-}	
-
-figure {margin:0} 
-figcaption {font-size: 14px;}
+}
+  
