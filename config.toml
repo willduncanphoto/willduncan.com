@@ -1,5 +1,6 @@
 baseURL = 'https://willduncan.com'
 languageCode = 'en-us'
+
 title = 'William Duncan'
 theme = 'baseline'
 enableGitInfo = 'true'
