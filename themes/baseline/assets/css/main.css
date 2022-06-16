@@ -23,3 +23,6 @@ section,
 summary {
     display: block;
 }	
+
+figure {margin:0} 
+figcaption {font-size: 14px;}
