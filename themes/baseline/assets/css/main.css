@@ -4,3 +4,7 @@ html {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
+#page {
+max-width: 1280px;
+}
