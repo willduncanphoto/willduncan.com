@@ -1,4 +1,0 @@
-{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
-{{ with $src.Exif }}
-<div id="metadata">{{ .Date.Format "2006-01-02" }} | {{ .Tags.Model }} | {{ .Tags.FocalLength }}mm | f/{{ .Tags.FNumber }} | {{ .Tags.ExposureTime }} | ISO{{ .Tags.ISOSpeedRatings }}</div>
-{{ end }}
