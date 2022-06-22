@@ -1,8 +1,7 @@
 baseURL = 'https://willduncan.com'
 languageCode = 'en-us'
-
 title = 'William Duncan'
-theme = 'baseline'
+
 enableGitInfo = 'true'
 
 [params]
@@ -40,3 +39,6 @@ enableGitInfo = 'true'
     title = 'But a print'
     url = '/prints/'
     weight = 40
+
+  [frontmatter]
+    publishDate = ['publishDate', 'date']
