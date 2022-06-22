@@ -29,3 +29,24 @@
 - Articles
 - Links
 - Quotes
+
+### Structure
+
+`hugo new posts/drafts/articles/2022-06-21-post-title/index.md --kind post-type`
+
+```
+/content
+    /about
+    /contact
+    /prints
+    /projects
+    /posts
+        /_drafts
+        /2022
+            /06-jun/
+                /articles
+                /photo
+                    /singles
+                    /packages
+            
+```
