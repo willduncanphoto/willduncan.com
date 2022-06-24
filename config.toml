@@ -14,6 +14,8 @@ enableGitInfo = 'true'
 [permalinks]
   articles = ':year/:month/:day/:title/'
   singles = ':year/:month/:day/:title/'
+  quotes = ':year/:month/:day/:title/'
+  links = ':year/:month/:day/:title/'
   '/' = '/:slug/'
 
 [menu]

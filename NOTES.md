@@ -57,3 +57,11 @@ hugo new projects/project-1.md
 hugo new --kind oss projects/oss/oss-1.md
 hugo new --kind tutorials projects/tutorials/tutorial-1.md
 ```
+
+```
+if [ "$CF_PAGES_BRANCH" == "main" ]; then
+  hugo build prod
+else
+  hugo build preview
+fi
+```

@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{"<!-- start index.html -->" | safeHTML }}
+{{ range .Site.RegularPages }}
+<article>
+<p>{{ .Date | time.Format "January 2, 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+</article>
+{{ end }}
+{{"<!-- end index.html -->" | safeHTML }}
+{{ end }}
