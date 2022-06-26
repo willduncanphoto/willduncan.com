@@ -1,19 +1,48 @@
+/* 
 @import 'https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css';
+*/
 
 html {
     font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    margin: 32px;
+}
+
+body {
+    margin: 35px;
+    padding: 0;
 }
 
 .page {
+    background-color: rgb(255, 227, 227);
+    max-width: 1280px;
     display: grid;
     gap: 16px;
-    grid-template-rows: auto auto 1fr auto;
-    min-height: 100vh;
+  }
+
+.header {
+    border: 1px dashed;
+}
+
+.navigation {
+    border: 1px dashed;
+}
+
+.main {
+    border: 1px dashed;
+}
+
+.footer{
+    border: 1px dashed;
+    font-size: small;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
-    display: inline;
-    padding: 1em;
+    display: inline-block;
+    padding-right: 32px;
 }
