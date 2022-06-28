@@ -4,7 +4,7 @@
 <article>
     <div class="wrap">
         <div class="date">
-            <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
+            <a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a>
         </div>
         <div class="copy">
             {{ .Content }}
