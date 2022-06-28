@@ -44,3 +44,12 @@ nav li {
     display: inline-block;
     padding-right: 32px;
 }
+
+.wrap {
+    display: grid;
+    grid-template-columns: 3fr 12fr;
+    grid-template-rows: auto;
+    padding-bottom: 1em;
+} 
+
+.wrap li {display: inline-block;}
