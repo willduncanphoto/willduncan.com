@@ -5,7 +5,7 @@ draft: false
 tags: ['photo', 'singles']
 post_id: 1656403520
 photoID: "b18911ec-a5b3-47b3-d9bc-854b54b39a00"
-caption: "Meeko basks in the morning sun from the guest chair in our office."
+caption: "Meeko — Santa Cruz, California"
 ---
 
 {{< cfimg >}}
