@@ -45,11 +45,25 @@ nav li {
     padding-right: 32px;
 }
 
-.wrap {
-    display: grid;
-    grid-template-columns: 3fr 12fr;
-    grid-template-rows: auto;
-    padding-bottom: 1em;
-} 
+figure {
+    margin: 0;
+    padding: 0;
+}
 
-.wrap li {display: inline-block;}
+figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    padding-top: 8px;
+}
+
+/* 
+
+.tags ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tags li {display: inline-block;}
+
+/*
