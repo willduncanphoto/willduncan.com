@@ -50,6 +50,11 @@ figure {
     padding: 0;
 }
 
+figure p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small; 
+}
+
 figcaption {
     font-family: 'Courier New', Courier, monospace;
     font-size: small;
