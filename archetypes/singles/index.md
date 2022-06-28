@@ -6,3 +6,4 @@ tags: ['photo', 'singles']
 post_id: {{ now.Unix }}
 photoID: ""
 ---
+{{< cfimg >}}
