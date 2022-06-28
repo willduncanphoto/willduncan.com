@@ -1,6 +1,6 @@
 ---
 title: "Steven King, On Writing"
-date: 2022-06-01T02:29:17-07:00
+date: 2022-01-01T02:29:17-07:00
 draft: false
 tags: ['quotes']
 ---
