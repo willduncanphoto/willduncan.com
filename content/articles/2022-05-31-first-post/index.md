@@ -5,7 +5,6 @@ draft: false
 tags: ['copy']
 ---
 # This is a heading
-
 Notice the tension between the two articles, specifically this sentence in Aggregation Theory: “no longer do distributors compete based upon exclusive supplier relationships. Had I kept that sentence in mind then I ought to have concluded that Level 1 and Level 2 were not Aggregators at all: sure, companies in these categories could scale on the demand side, but they were going to hit a wall on the supply side. Indeed, this has been a problem for Uber in particular: the company has never been able to escape from the need to compete for supply, which is another way of saying the company has never been able to make any money.
 
 ### This is a sub-heading
