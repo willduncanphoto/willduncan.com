@@ -13,8 +13,8 @@ body {
 .page {
     max-width: 1280px;
     display: grid;
-    grid-template-columns: 200px auto;
-    grid-template-rows: auto;
+    grid-template-columns: 200px auto;   
+    place-content: center;
     gap: 16px;
   }
 
@@ -78,8 +78,6 @@ nav li {
 
 .copy {
 }
-
-article {padding-bottom:80px;}
 
 .wrap {
     display: grid;
