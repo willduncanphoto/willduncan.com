@@ -2,7 +2,7 @@
 title: "Type Scale"
 date: 2022-06-07T01:43:41-07:00
 draft: false
-tags: ['articles', 'copy']
+tags: ['copy']
 ---
 # Heading 1
 ## Heading 2
