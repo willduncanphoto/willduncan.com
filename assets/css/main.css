@@ -13,12 +13,11 @@ body {
 .page {
     max-width: 1280px;
     display: grid;
-    grid-template-columns: 200px auto;   
-    place-content: center;
+    grid-template-columns: 1fr 4fr;
     gap: 16px;
   }
 
-/*
+
 
 .header {
     border: 1px dashed;
@@ -36,8 +35,6 @@ body {
     border: 1px dashed;
     font-size: small;
 }
-
-*/
 
 .header {
     grid-column: 2;
