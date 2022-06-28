@@ -18,6 +18,9 @@ body {
   }
 
 
+article {margin-bottom: 64px;}
+
+
 
 .header {
     border: 1px dashed;
