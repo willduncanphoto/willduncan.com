@@ -3,7 +3,6 @@
     {{ range .Site.RegularPages }}
         {{ partial (printf "post-types/%s.html" .Type) . }}
     {{ end }}
-
 {{"<!-- end index.html -->" | safeHTML }}
 {{ end }}
 
