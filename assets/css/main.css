@@ -14,14 +14,13 @@ body {
     max-width: 1280px;
     display: grid;
     grid-template-columns: 200px auto;
-    margin-left: auto; margin-right: auto;
+    margin-left: auto; 
+    margin-right: auto;
     gap: 16px;
   }
 
 
 article {margin-bottom: 64px;}
-
-
 
 .header {
     border: 1px dashed;
