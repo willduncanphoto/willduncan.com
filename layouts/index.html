@@ -1,23 +1,10 @@
 {{ define "main" }}
 {{"<!-- start index.html -->" | safeHTML }}
-{{ range .Site.RegularPages }}
-<article>
-    <div class="wrap">
-        <div class="date">
-            <a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
-        </div>
-        <div class="copy">
-            {{ .Content }}
-        </div>
-        <div class="tags"> 
-            <ul>
-                {{ range .GetTerms "tags" }}
-                <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
-                {{- end }}
-            </ul>
-        </div>
-    </div>
-</article>
-{{ end }}
+    {{ range .Site.RegularPages }}
+        {{ partial (printf "post-types/%s.html" .Type) . }}
+    {{ end }}
+
 {{"<!-- end index.html -->" | safeHTML }}
 {{ end }}
+
+

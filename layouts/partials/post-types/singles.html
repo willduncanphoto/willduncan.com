@@ -1,3 +1,6 @@
-<article>
-    <p>This is a single post-type</p>
-</article>
+{{"<!-- start /_default/single.html -->" | safeHTML }}
+<div class="date">
+    <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006 at 3:04 PM MST" }}</a></p>
+</div>
+{{ .Content }}
+{{"<!-- end /_default/single.html -->" | safeHTML }}
