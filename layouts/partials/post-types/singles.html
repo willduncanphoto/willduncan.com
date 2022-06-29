@@ -4,5 +4,12 @@
     <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
 </div>
 {{ .Content }}
+<div class="tags">
+    <ul>
+        {{ range .GetTerms "tags" }}
+        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+        {{- end }}
+    </ul>
+</div>
 </article>
 {{"<!-- end /post-type/singles.html -->" | safeHTML }}

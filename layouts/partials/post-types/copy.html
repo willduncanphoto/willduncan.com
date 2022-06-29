@@ -5,5 +5,12 @@
 </div>
 <h1>{{ .Title }}</h1>
 {{ .Content }}
+<div class="tags">
+    <ul>
+        {{ range .GetTerms "tags" }}
+        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+        {{- end }}
+    </ul>
+</div>
 </article>
 {{"<!-- end /_default/single.html -->" | safeHTML }}
