@@ -1,6 +1,6 @@
 ---
 title: "Steinbeck Quote"
-date: 2022-06-23T02:26:27-07:00
+date: 2022-06-20T02:26:27-07:00
 draft: false
 tags: ['quotes']
 ---
