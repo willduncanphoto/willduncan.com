@@ -8,9 +8,10 @@
     src="https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=100"
 />
 <figcaption>
-{{ .Page.Params.caption | safeHTML }} {{ with $.Page.Params.client}} Client: {{ $.Page.Params.client }}{{end}}
+{{ .Page.Params.caption | safeHTML }} {{ with $.Page.Params.credit}}{{ $.Page.Params.credit }}{{end}}{{ with $.Page.Params.client}}/{{ $.Page.Params.client }}{{end}}
 <ul>
     <li>frame: 20220617T185621_9051</li>
+    <li>date: 2022-05-01</li>
     <li>model: Nikon Z 9</li>
     <li>lens: 70-200mm f/2.8 VR S</li>
     <li>mode: Manual</li>
