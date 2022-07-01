@@ -26,14 +26,18 @@ nav li {
     padding-right: 32px;
 }
 
-article {margin-bottom: 64px;}
+article {
+    padding-bottom: 32px;
+}
 
 .date {
-    padding:0;
+    margin: 0 16px;
     font-size: medium; 
 }
 
 /* Copy */
+
+.copy {margin: 0 16px;}
 
 .copy h1{
     font-size: 2em;
@@ -56,6 +60,9 @@ article {margin-bottom: 64px;}
 
 /* Quotes */
 
+.quotes {
+}
+
 /* Singles */
 
 figure {
@@ -67,8 +74,7 @@ figure img {border: 1px solid black;
 }
 
 figcaption {
-    padding-left: 8px;
-    padding-top: 8px;
+    margin: 8px 16px;
     font-size: small;
 }
 
@@ -91,8 +97,7 @@ figcaption {
 
 .tags {
     font-size: medium;
-    padding-top: 8px;
-    padding-left: 8px;
+    padding: 0 16px;
 }
 
 .tags ul {
