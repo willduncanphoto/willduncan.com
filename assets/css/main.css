@@ -33,13 +33,13 @@ article {margin-bottom: 64px;}
     font-size: medium; 
 }
 
-.date a:link{text-decoration: none;}
-
 /* Copy */
 
 .copy h1{
     font-size: 2em;
 }
+
+.copy h1,h2,h3,h4,h5,h6{}
 
 .copy p{
     max-width: 64ch;
