@@ -1,6 +1,6 @@
 ---
 title: "Type Scale"
-date: 2022-06-26T01:43:41-07:00
+date: 2021-12-01T01:43:41-07:00
 draft: false
 tags: ['copy']
 ---

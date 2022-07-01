@@ -1,17 +1,12 @@
 @import 'https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css';
 
-html {
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
 body {
     margin: 35px;
     padding: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .page {
-    font-family:'Courier New', Courier, monospace;
     max-width: 1280px;
     display: grid;
     grid-template-columns: auto;
@@ -81,13 +76,13 @@ figure {
 figure img {border: 1px solid black;
 }
 
-figure p {
-    font-size: small;
+figcaption {
+    padding-left: 8px;
+    padding-top: 8px;
 }
 
-figcaption {
-    font-size: small;
-    padding-top: 8px;
+.photo-credit {
+    color: rgb(149, 149, 149);
 }
 
 .tags {
@@ -95,6 +90,7 @@ figcaption {
     grid-row: 2 / -1;
     font-size: medium;
     padding-top: 8px;
+    padding-left: 8px;
 }
 
 .tags ul {

@@ -8,7 +8,10 @@
     src="https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=100"
 />
 <figcaption>
-{{ .Page.Params.caption | safeHTML }} {{ with $.Page.Params.credit}}{{ $.Page.Params.credit }}{{end}}{{ with $.Page.Params.client}}/{{ $.Page.Params.client }}{{end}}
+{{ .Page.Params.caption | safeHTML }} <span class="photo-credit">{{ with $.Page.Params.credit}}{{ $.Page.Params.credit }}{{end}}{{ with $.Page.Params.client}}/{{ $.Page.Params.client }}{{end}}</span>
+</figcaption>
+</figure>
+
 <ul>
     <li>frame: 20220617T185621_9051</li>
     <li>date: 2022-05-01</li>
@@ -20,5 +23,3 @@
     <li>f-stop: 2.8</li>
     <li>length: 200mm</li>
 </ul> 
-</figcaption>
-</figure>

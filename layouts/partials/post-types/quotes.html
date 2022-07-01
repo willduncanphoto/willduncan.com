@@ -1,7 +1,7 @@
 {{"<!-- start /post-type/quotes.html -->" | safeHTML }}
 <article class="quotes">
     <section class="date">
-        <p>{{ singularize .Type |  upper }}</p>
+        <p>{{ .Type |  upper }}</p>
         <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
     </section>
     <section class="quote-content">
