@@ -5,6 +5,6 @@ draft: false
 tags: ['singles']
 post_id: 1656405267
 photoID: "b15280ef-8ee8-4cbc-68f6-5d967ef9f300"
-caption: Gouda's not support to be on the bed yet. Puppy training is hard.
+caption: Gouda.
 ---
 {{< cfimg >}}
