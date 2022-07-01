@@ -4,7 +4,6 @@ date: 2021-12-01T01:43:41-07:00
 draft: false
 tags: ['copy']
 ---
-# Heading 1
 ## Heading 2
 ### Heading 3
 #### Heading 4

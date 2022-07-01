@@ -1,10 +1,9 @@
 <article class="copy">
-    <section class="copy-date">
-        <h1>Title</h1>
+    <section>
         <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
     </section>
-    <section class="copy-content">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title | title }}</h1>
+    <section>
     {{ .Content }}
     </section>
     <section class="tags">
