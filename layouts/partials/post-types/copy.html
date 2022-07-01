@@ -1,8 +1,6 @@
-{{"<!-- start /partials/post-types/copy.html -->" | safeHTML }}
 <article class="copy">
-    <section class="category">
-    </section>
     <section class="copy-date">
+        <h1>Title</h1>
         <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
     </section>
     <section class="copy-content">
@@ -17,4 +15,3 @@
         </ul>
     </section>
 </article>
-{{"<!-- end /partials/post-types/copy.html -->" | safeHTML }}
