@@ -11,7 +11,6 @@ body {
 }
 
 .page {
-    font-family: 'Courier New', Courier, monospace;
     max-width: 1280px;
     display: grid;
     grid-template-columns: auto;
@@ -61,7 +60,6 @@ article {margin-bottom: 64px;}
 }
 
 .footer {
-    font-family: 'Courier New', Courier, monospace;
     font-size: medium; 
 }
 
@@ -78,7 +76,6 @@ nav li {
 
 .date {
     padding:0;
-    font-family: 'Courier New', Courier, monospace;
     font-size: medium; 
 }
 
