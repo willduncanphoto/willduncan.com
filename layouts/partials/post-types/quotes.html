@@ -1,9 +1,18 @@
 {{"<!-- start /post-type/quotes.html -->" | safeHTML }}
-<article class="quote">
-<div class="date">
-    <p>{{ singularize .Type }}</p>
-    <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
-</div>6
-{{ .Content }}
+<article class="quotes">
+    <section class="date">
+        <p>{{ singularize .Type |  upper }}</p>
+        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
+    </section>
+    <section class="quote-content">
+        {{ .Content }}
+    </section>
+    <section class="tags">
+        <ul>
+            {{ range .GetTerms "tags" }}
+            <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+            {{- end }}
+        </ul>
+    </section>
 </article>
 {{"<!-- end /post-type/quotes.html -->" | safeHTML }}

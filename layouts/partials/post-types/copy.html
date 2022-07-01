@@ -1,17 +1,21 @@
-{{"<!-- start /_default/single.html -->" | safeHTML }}
-<article class="post">
-    <div class="date">
+{{"<!-- start /partials/post-types/copy.html -->" | safeHTML }}
+<article class="copy">
+    <section class="category">
         <p>{{ singularize .Type |  upper }}</p>
+    </section>
+    <section class="copy-date">
         <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
-    </div>
-<h1>{{ .Title }}</h1>
-{{ .Content }}
-<div class="tags">
-    <ul>
-        {{ range .GetTerms "tags" }}
-        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
-        {{- end }}
-    </ul>
-</div>
+    </section>
+    <section class="copy-content">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    </section>
+    <section class="tags">
+        <ul>
+            {{ range .GetTerms "tags" }}
+            <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+            {{- end }}
+        </ul>
+    </section>
 </article>
-{{"<!-- end /_default/single.html -->" | safeHTML }}
+{{"<!-- end /partials/post-types/copy.html -->" | safeHTML }}

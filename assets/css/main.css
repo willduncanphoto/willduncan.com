@@ -11,6 +11,7 @@ body {
 }
 
 .page {
+    font-family:'Courier New', Courier, monospace;
     max-width: 1280px;
     display: grid;
     grid-template-columns: auto;
@@ -41,22 +42,13 @@ article {margin-bottom: 64px;}
 
 */
 
-.header {
-}
-
-.navigation {
-}
-
-.main {
-}
-
-.post {
-    
-}
-
-.post p{
-    max-width: 65ch;
+.copy-content p{
+    max-width: 64ch;
     line-height: 1.5em;
+}
+
+.copy-content blockquote{
+    max-width: 48ch;
 }
 
 .footer {
@@ -80,13 +72,6 @@ nav li {
 }
 
 .date a:link{text-decoration: none;}
-
-.copy {
-}
-
-.wrap {
-
-}
 
 figure {
     margin: 0;
