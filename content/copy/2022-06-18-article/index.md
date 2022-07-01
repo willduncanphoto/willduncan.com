@@ -2,7 +2,7 @@
 title: "The Nikon Z9: 16,531 frames later"
 date: 2022-06-18T01:29:35-07:00
 draft: false
-tags: ['copy']
+tags: ['copy','nikon','gear']
 ---
 I'm baby master cleanse microdosing farm-to-table pok pok viral next level readymade cardigan you probably haven't heard of them tattooed. Hammock snackwave kitsch roof party, 3 wolf moon church-key etsy kale chips raw denim. Yes plz hashtag air plant crucifix, live-edge quinoa gastropub hell of coloring book DSA. Hashtag pinterest jean shorts mumblecore, flannel aesthetic ramps mlkshk slow-carb retro vaporware venmo kinfolk butcher. DSA single-origin coffee ramps gochujang tofu. Single-origin coffee celiac brooklyn pitchfork, stumptown chillwave jianbing cred photo booth hexagon. Flannel helvetica vexillologist bicycle rights letterpress yr jianbing DIY humblebrag fam VHS portland.
 
