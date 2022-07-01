@@ -1,8 +1,9 @@
 {{"<!-- start /post-type/quotes.html -->" | safeHTML }}
-<article>
+<article class="quote">
 <div class="date">
+    <p>{{ singularize .Type }}</p>
     <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
-</div>
+</div>6
 {{ .Content }}
 </article>
 {{"<!-- end /post-type/quotes.html -->" | safeHTML }}

@@ -1,8 +1,9 @@
 {{"<!-- start /_default/single.html -->" | safeHTML }}
 <article class="post">
-<div class="date">
-    <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
-</div>
+    <div class="date">
+        <p>{{ singularize .Type |  upper }}</p>
+        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
+    </div>
 <h1>{{ .Title }}</h1>
 {{ .Content }}
 <div class="tags">
