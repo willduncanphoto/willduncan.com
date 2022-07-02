@@ -5,15 +5,6 @@
     <section class="single-content">
         {{ .Content }}
     </section>
-    <section>
-        <p>exif.json output</p>
-<section>
-    {{ with .Resources.GetMatch "exif.json" }}
-    {{ .Content }}
-    {{ end }}
-</section>
-</section>
-    </section>
     <section class="tags">
     <ul>
         {{ range .GetTerms "tags" }}
