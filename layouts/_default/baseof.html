@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
-    {{- partial "head.html" . -}}
+    {{- partial "head.html" . }}
 </head>
 <body>
 <div class="page">
     <header>
-        {{- partial "header.html" . -}}
+        {{ partial "header.html" . }}
     </header>
     <nav>
-        {{- partial "navigation.html" . -}}
-    <nav>
+        {{ partial "navigation.html" . }}
+    </nav>
     <main>
-        {{- block "main" . }}{{- end }}
+        {{ block "main" . }}{{ end }}
     </main>
     <footer>
-        {{- partial "footer.html" . -}}
+        {{ partial "footer.html" . }}
     </footer>
 </div>
 </body>

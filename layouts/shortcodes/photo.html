@@ -1,0 +1,19 @@
+{{ $exif := dict }}
+{{ with .Resources.Get "exif.json" }}
+{{ $exif = . | transform.Unmarshal }}
+{{ end }}
+
+
+{{ $imageDescription := "" }}
+{{ $imageSize := "" }}
+{{ with where $exif "SourceFile" "eq" .Name }}
+{{ with index . 0 }}
+{{ $imageDescription = .Make }}
+{{ $imageSize = .FocalLengthIn35mmFormat }}
+{{ end }}
+{{ end }}
+<figure>
+<img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $imageDescription }}">
+<figcaption>{{ $imageDescription }} ({{ $imageSize }})</figcaption>
+</figure>
+</section>
