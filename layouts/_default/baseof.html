@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-{{- partial "head.html" . -}}
+<head>
+    {{- partial "head.html" . -}}
+</head>
 <body>
 <div class="page">
     <header>
@@ -8,7 +10,7 @@
     </header>
     <nav>
         {{- partial "navigation.html" . -}}
-    </nav>
+    <nav>
     <main>
         {{- block "main" . }}{{- end }}
     </main>
