@@ -7,26 +7,10 @@
     </section>
     <section>
         <p>exif.json output</p>
-
-{{ $exif := dict }}
-    {{ with .Resources.Get "exif.json" }}
-          {{ $exif = . | transform.Unmarshal }}
-    {{ end }}
-{{ range .Resources.Match "*.jpg" }}
-    {{ $model := "" }}
-    {{ $lens := "" }}
-{{ with where $exif "SourceFile" "eq" .Name }}
-    {{ with index . 0 }}
-        {{ $model = .Make }}
-        {{ $lens = .FocalLengthIn35mmFormat }}
-    {{ end }}
-{{ end }}
 <section>
-    <ul>
-        <li>{{ $model }}</li>
-        <li>{{ $lens }}</li>
-    </ul>
-{{ end }}
+    {{ with .Resources.GetMatch "exif.json" }}
+    {{ .Content }}
+    {{ end }}
 </section>
 </section>
     </section>
