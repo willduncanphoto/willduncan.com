@@ -5,6 +5,51 @@
     <section class="single-content">
         {{ .Content }}
     </section>
+    <section class=""exif>
+        {{ $exif := dict }}
+
+{{ with .Resources.Get "exif.json" }}
+    {{ $exif = . | transform.Unmarshal }}
+{{ end }}
+
+{{ range .Resources.Match "*.jpg" }}
+    {{ $source := "" }}
+    {{ $date := "" }}
+    {{ $model := "" }}
+    {{ $lens := "" }}
+    {{ $mode := "" }}
+    {{ $iso := "" }}
+    {{ $shutter := "" }}
+    {{ $aperture := "" }}
+    {{ $length := "" }}
+    {{ with where $exif "SourceFile" "eq" .Name }}
+        {{ with index . 0 }}
+            {{ $source = .SourceFile }}
+            {{ $date = .DateTimeOriginal }}
+            {{ $model = .Model }}
+            {{ $lens = .LensModel }}
+            {{ $mode = .ExposureMode }}
+            {{ $iso = .ISO }}
+            {{ $shutter = .ShutterSpeedValue }}
+            {{ $aperture = .ApertureValue }}
+            {{ $length = .FocalLengthIn35mmFormat }}
+        {{ end }}
+    {{ end }}
+    <section>
+        <ul>
+            <li>{{ $source }}</li>
+            <li>{{ $date }}</li>
+            <li>{{ $model }}</li>
+            <li>{{ $lens }}</li>
+            <li>{{ $mode }}</li>
+            <li>{{ $date }}</li>
+            <li>{{ $shutter }}</li>
+            <li>{{ $aperture }}</li>
+            <li>{{ $length }}</li>
+        </ul>
+    </section>
+{{ end }}
+    </section>
     <section class="tags">
     <ul>
         {{ range .GetTerms "tags" }}

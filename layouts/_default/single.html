@@ -1,10 +1,5 @@
 {{ define "main" }}
-    <h2>{{ .Title }}</h2>
+    <h1>{{ .Title }}</h1>
     <div id="timestamp">{{ .Date | time.Format "January 2, 2006 @ 3:04 PM MST" }}</div>
     {{ .Content }}
-        {{ with .Resources.Get "exif.json" }}
-        <section>
-            {{ .Content }}
-        </section>
-        {{ end }}
 {{ end }}
