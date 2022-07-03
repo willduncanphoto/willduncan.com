@@ -21,7 +21,7 @@
     {{ $shutter := "" }}
     {{ $aperture := "" }}
     {{ $length := "" }}
-    {{ with where $exif "SourceFile" "eq" .Name }}
+    {{ with $exif }}
         {{ with index . 0 }}
             {{ $source = .SourceFile }}
             {{ $date = .DateTimeOriginal }}
