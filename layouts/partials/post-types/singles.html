@@ -6,9 +6,8 @@
         {{ .Content }}
     </section>
     <section class=""exif>
-
-    {{ $exif := dict }}
-    {{ with .Resources.GetMatch "exif.json" }}
+{{ $exif := dict }}
+    {{ with .Resources.Get "exif.json" }}
         {{ $exif = . | transform.Unmarshal }}
     {{ end }}
 
