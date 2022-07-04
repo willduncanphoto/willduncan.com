@@ -3,9 +3,8 @@
     <div id="timestamp">{{ .Date | time.Format "January 2, 2006 @ 3:04 PM MST" }}</div>
     {{ .Content }}
     
-    {{ $exif := dict }}
-    {{ with .Resources.Get "exif.json" }}
-        {{ $exif = . | transform.Unmarshal }}
-        {{ $exif }}
+    {{ with .Resources.GetMatch "exif.json" }}
+    {{ .Content | transform.Unmarshal }}
     {{ end }}
+
 {{ end }}
