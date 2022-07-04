@@ -1,5 +1,35 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
-    <div id="timestamp">{{ .Date | time.Format "January 2, 2006 @ 3:04 PM MST" }}</div>
-    {{ .Content }}
+<article class="singles">
+    <section class="date">
+        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
+    </section>
+    <section class="single-content">
+        {{ .Content }}
+    </section>
+    {{ with .Resources.GetMatch "*.json" }}
+    {{ $exif := .Content | transform.Unmarshal }}
+        {{ range $exif }}
+        <section class="exif">
+            <ul>
+                <li>File: {{ .SourceFile }}</li>
+                <li>Date: {{ .DateTimeOriginal }}</li>
+                <li>Camera: {{ .Model }}</li>
+                <li>Lens: {{ .LensModel }}</li>
+                <li>Mode: {{ .ExposureMode }}</li>
+                <li>Shutter: {{ .ExposureTime }} sec</li>
+                <li>Aperture: {{ .FNumber }}</li>
+                <li>Length: {{ .FocalLengthIn35mmFormat }}</li>
+                <li>ISO: {{ .ISO }}</li>
+            </ul>
+        </section>
+        {{ end }}
+    {{ end }}
+    <section class="tags">
+    <ul>
+        {{ range .GetTerms "tags" }}
+        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+        {{- end }}
+    </ul>
+    </section>
+</article>
 {{ end }}
