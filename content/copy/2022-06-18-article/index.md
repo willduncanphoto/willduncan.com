@@ -1,5 +1,5 @@
 ---
-title: "The Nikon Z 9: 16,531 Frames Later"
+title: "The Nikon Z 9: 9,132 Frames Later"
 date: 2022-06-18T01:29:35-07:00
 draft: false
 tags: ['copy','nikon','gear']

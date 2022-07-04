@@ -32,3 +32,18 @@ Properties for Grid items
     align-self
     place-self
 
+
+
+
+
+    {{ with .Resources.GetMatch "*.json" }}
+    <section class="exif">
+        <ul>
+            <li>File: {{ .SourceFile }}</li>
+            <li>Date: {{ .CreateDate }}</li>
+            <li>Body: {{ .Model }}</li>
+            <li>Lens: {{ .LensModel }}</li>
+            <li>Settings: 200mm, f/2.8, 1/60, 100</li>
+        </ul>
+    </section>
+    {{ end }}
