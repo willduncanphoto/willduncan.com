@@ -7,7 +7,7 @@
         {{ .Content }}
     </section>
     {{ with .Resources.GetMatch "*.json" }}
-    {{ $exif := .Content | transform.Unmarshal }}
+    {{ $exif := . | transform.Unmarshal }}
         {{ range $exif }}
         <section class="exif">
             <ul>
