@@ -4,7 +4,19 @@
     {{ .Content }}
     
     {{ with .Resources.GetMatch "exif.json" }}
-    {{ .Content | transform.Unmarshal }}
+    {{ $exif := .Content | transform.Unmarshal }}
+        {{ range $exif }}
+        <section class="exif">
+            <ul>
+                <li>{{ .SourceFile }}</li>
+                <li>{{ .DateTimeOriginal }}</li>
+                <li>{{ .FocalLength }}</li>
+                <li>{{ .ExposureTime }}</li>
+                <li>{{ .FNumber }}</li>
+                <li>{{ .ISO }}</li>
+            </ul>
+        </section>
+        {{ end }}
     {{ end }}
 
 {{ end }}
