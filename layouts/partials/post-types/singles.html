@@ -5,6 +5,7 @@
     <section class="single-content">
         {{ .Content }}
     </section>
+  
         {{ $exif := dict }}
             {{ with .Resources.Get "exif.json" }}
                 {{ $exif = . | transform.Unmarshal }}
@@ -47,7 +48,6 @@
                 </ul>
             </section>
         {{ end }}
-    </section>
     <section class="tags">
     <ul>
         {{ range .GetTerms "tags" }}
