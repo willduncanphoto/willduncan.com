@@ -1,5 +1,18 @@
-{{ with .Resources.GetMatch "exif.json" }}
-<section class="exif">
-  {{ .Content }}
-</section>
+{{ with .Resources.GetMatch "*.json" }}
+{{ $exif := .Content | transform.Unmarshal }}
+    {{ range $exif }}
+    <section class="exif">
+        <ul>
+            <li>File: {{ .SourceFile }}</li>
+            <li>Date: {{ .DateTimeOriginal }}</li>
+            <li>Camera: {{ .Model }}</li>
+            <li>Lens: {{ .LensModel }}</li>
+            <li>Mode: {{ .ExposureMode }}</li>
+            <li>Shutter: {{ .ExposureTime }} sec</li>
+            <li>Aperture: {{ .FNumber }}</li>
+            <li>Length: {{ .FocalLengthIn35mmFormat }}</li>
+            <li>ISO: {{ .ISO }}</li>
+        </ul>
+    </section>
+    {{ end }}
 {{ end }}
