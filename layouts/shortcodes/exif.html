@@ -1,4 +1,18 @@
-{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
-{{ with $src.Exif }}
-<div id="metadata">{{ .Date.Format "2006-01-02" }} | {{ .Tags.Model }} | {{ .Tags.FocalLength }}mm | f/{{ .Tags.FNumber }} | {{ .Tags.ExposureTime }} | ISO{{ .Tags.ISOSpeedRatings }}</div>
+{{ with .Resources.GetMatch "*.json" }}
+{{ $exif := .Content | transform.Unmarshal }}
+    {{ range $exif }}
+    <section class="exif">
+        <ul>
+            <li>File: {{ .SourceFile }}</li>
+            <li>Date: {{ .DateTimeOriginal }}</li>
+            <li>Camera: {{ .Model }}</li>
+            <li>Lens: {{ .LensModel }}</li>
+            <li>Mode: {{ .ExposureMode }}</li>
+            <li>Shutter: {{ .ExposureTime }} sec</li>
+            <li>Aperture: {{ .FNumber }}</li>
+            <li>Length: {{ .FocalLengthIn35mmFormat }}</li>
+            <li>ISO: {{ .ISO }}</li>
+        </ul>
+    </section>
+    {{ end }}
 {{ end }}

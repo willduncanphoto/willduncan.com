@@ -1,0 +1,117 @@
+<body>
+<div class="page">
+    <header>
+        <h1></h1>
+        <p>Photographer based in Santa Cruz, California.</p>
+    </header>
+    <nav></nav>
+    <address>
+        <ul>
+            <li>831-291-3818</li>
+            <li>will@willduncan.com</li>
+        </ul>
+    </address>
+    <main>
+        <article class="post-type">
+            <h1>Post Title</h1>
+            <section class="tldr"></section>
+            <section class="content"></section>
+            <nav class="tags"></nav>
+        </article>
+    </main>
+    <footer>
+        <p class="copyright">Copyright &copy; 2022 William Duncan</p>
+        <p class="credit">Baked in Hugo, served on Pages</p>
+    </footer>
+</div>
+</body>
+
+    <article>
+    <aside>
+    <details>
+    <figcaption>
+    <figure>
+    <footer>
+    <header>
+    <main>
+    <mark>
+    <nav>
+    <section>
+    <summary>
+    <time>
+
+
+<section>
+    <h1>Latest Blog Posts</h1>
+    <article>
+      <h2>Blog Post Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+    <article>
+      <h2>Blog Post Title</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </article>
+  </section>
+
+
+  ##Grid Container
+
+    display
+    grid-template-columns
+    grid-template-rows
+    grid-template-areas
+    grid-template
+    grid-column-gap
+    grid-row-gap
+    grid-gap
+    justify-items
+    align-items
+    place-items
+    justify-content
+    align-content
+    place-content
+    grid-auto-columns
+    grid-auto-rows
+    grid-auto-flow
+    grid
+
+Properties for Grid items
+
+    grid-column-start
+    grid-column-end
+    grid-row-start
+    grid-row-end
+    grid-column
+    grid-row
+    grid-area
+    justify-self
+    align-self
+    place-self
+
+
+
+
+
+    {{ with .Resources.GetMatch "*.json" }}
+    <section class="exif">
+        <ul>
+            <li>File: {{ .SourceFile }}</li>
+            <li>Date: {{ .CreateDate }}</li>
+            <li>Body: {{ .Model }}</li>
+            <li>Lens: {{ .LensModel }}</li>
+            <li>Settings: 200mm, f/2.8, 1/60, 100</li>
+        </ul>
+    </section>
+    {{ end }}
+
+
+  {{- with .Resources.GetMatch "urls.json" -}}
+  {{- $json := unmarshal .Content -}}
+  {{- range $json -}}
+  <ul>
+     {{ range .url }}
+       <li><a href="{{ .link }}">{{ .label }}</a></li>
+     {{ end }}
+  </ul>   
+  {{- end -}}
+{{- end -}}

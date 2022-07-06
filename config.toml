@@ -12,7 +12,10 @@ enableGitInfo = 'true'
     cloudflareID = '0KE9fI8HU0iXQd54xFyZqw'
 
 [permalinks]
-  posts = '/:year/:month/:day/:title/'
+  articles = ':year/:month/:day/:title/'
+  singles = ':year/:month/:day/:title/'
+  quotes = ':year/:month/:day/:title/'
+  links = ':year/:month/:day/:title/'
   '/' = '/:slug/'
 
 [menu]

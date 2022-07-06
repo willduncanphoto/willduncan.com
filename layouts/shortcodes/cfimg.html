@@ -8,6 +8,6 @@
     src="https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=100"
 />
 <figcaption>
-{{ .Page.Params.caption | safeHTML }}{{ with $.Page.Params.source}} Client: {{ $.Page.Params.source }}{{end}} 
+{{ .Page.Params.caption | safeHTML }} <span class="photo-credit">{{ with $.Page.Params.credit}}{{ $.Page.Params.credit }}{{end}}{{ with $.Page.Params.client}}/{{ $.Page.Params.client }}{{end}}</span>
 </figcaption>
 </figure>

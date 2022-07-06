@@ -1,0 +1,7 @@
+{{ define "main" }}
+    {{ range .Site.RegularPages }}
+        {{ partial (printf "post-types/%s.html" .Type) . }}
+    {{ end }}
+{{ end }}
+
+

@@ -3,7 +3,7 @@
 
 # Hugo folders
 /public
-/resources/_gen/
+/resources
 
 # Hugo lock files
 .hugo_build.lock

@@ -1,21 +1,22 @@
-{{"<!-- start /_defaults/baseof.html -->" | safeHTML }}
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
-    {{- partial "head.html" . -}}
+    {{- partial "head.html" . }}
 </head>
 <body>
-<div id="page">
-    <div id="header">
-        {{- partial "header.html" . -}}
-    </div>
-    <div id="main">
-        {{- block "main" . }}{{- end }}
-    </div>
-    <div id="footer">
-        {{- partial "footer.html" . -}}
-    </div>
+<div class="page">
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+    <nav>
+        {{ partial "navigation.html" . }}
+    </nav>
+    <main>
+        {{ block "main" . }}{{ end }}
+    </main>
+    <footer>
+        {{ partial "footer.html" . }}
+    </footer>
 </div>
 </body>
 </html>
-{{"<!-- end /_defaults/baseof.html -->" | safeHTML }}

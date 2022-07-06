@@ -1,7 +1,43 @@
 {{ define "main" }}
-{{"<!-- start /_default/single.html -->" | safeHTML }}
-<h2>{{ .Title }}</h2>
-<div id="timestamp">{{ .Date | time.Format "January 2, 2006 @ 3:04 PM MST" }}</div>
-{{ .Content }}
-{{"<!-- end /_default/single.html -->" | safeHTML }}
+<article class="singles">
+    <p>{{ .Type | upper }}</span></p>
+    <section class="article-data">
+        <ul>
+            <li>{{ .Date | time.Format "January 2, 2006 3:04 PM MST" }}</li>
+            <li>{{ .FuzzyWordCount }} words</li>
+            <li>{{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }}</li>
+        </ul>
+    </section>
+    <section class="date">
+        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006 3:04 PM MST" }}</a></p>
+    </section>
+    <section class="single-content">
+        {{ .Content }}
+    </section>
+    {{ with .Resources.GetMatch "*.json" }}
+    {{ $exif := . | transform.Unmarshal }}
+        {{ range $exif }}
+        <section class="exif">
+            <ul>
+                <li>File: {{ .SourceFile }}</li>
+                <li>Date: {{ .DateTimeOriginal }}</li>
+                <li>Camera: {{ .Model }}</li>
+                <li>Lens: {{ .LensModel }}</li>
+                <li>Mode: {{ .ExposureMode }}</li>
+                <li>Shutter: {{ .ExposureTime }} sec</li>
+                <li>Aperture: {{ .FNumber }}</li>
+                <li>Length: {{ .FocalLengthIn35mmFormat }}</li>
+                <li>ISO: {{ .ISO }}</li>
+            </ul>
+        </section>
+        {{ end }}
+    {{ end }}
+    <section class="tags">
+    <ul>
+        {{ range .GetTerms "tags" }}
+        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+        {{- end }}
+    </ul>
+    </section>
+</article>
 {{ end }}

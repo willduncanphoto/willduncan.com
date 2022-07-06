@@ -1,7 +1,0 @@
-{{ define "main" }}
-{{"<!-- start /photos/singles/single.html -->" | safeHTML }}
-<h2>{{ .Title }}</h2>
-<div id="timestamp">{{ .Date | time.Format "January 2, 2006 @ 3:04 PM MST" }}</div>
-{{ .Content }}
-{{"<!-- end /photos/singles/single.html -->" | safeHTML }}
-{{ end }}

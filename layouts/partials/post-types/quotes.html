@@ -1,0 +1,15 @@
+<article class="quotes">
+    <section class="date">
+        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
+    </section>
+    <section class="quote-content">
+        {{ .Content }}
+    </section>
+    <section class="tags">
+        <ul>
+            {{ range .GetTerms "tags" }}
+            <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+            {{- end }}
+        </ul>
+    </section>
+</article>
