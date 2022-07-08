@@ -32,17 +32,17 @@ enableGitInfo = 'true'
     url = '/about/'
     weight = 20
 
-  [[menu.main]]
-    name = 'Projects'
-    title = 'projects'
-    url = '/projects/'
-    weight = 30
+#  [[menu.main]]
+#    name = 'Projects'
+#    title = 'projects'
+#    url = '/projects/'
+#    weight = 30
 
-  [[menu.main]]
-    name = 'Buy a print'
-    title = 'But a print'
-    url = '/prints/'
-    weight = 40
+ # [[menu.main]]
+ #   name = 'Buy a print'
+ #   title = 'But a print'
+ #   url = '/prints/'
+ #   weight = 40
 
   [frontmatter]
     publishDate = ['publishDate', 'date']
