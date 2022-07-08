@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ range .Site.RegularPages }}
+    {{ range where .Site.RegularPages "Type" "in" site.Params.postTypes }}
         {{ partial (printf "post-types/%s.html" .Type) . }}
     {{ end }}
 {{ end }}

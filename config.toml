@@ -10,6 +10,7 @@ enableGitInfo = 'true'
     phone = '(831)291-3818'
     email = 'hello@coldwaterchapel.com'
     cloudflareID = '0KE9fI8HU0iXQd54xFyZqw'
+    postTypes = ['copy', 'packages', 'quotes', 'singles', 'links']  
 
 [permalinks]
   articles = ':year/:month/:day/:title/'
