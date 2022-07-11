@@ -1,10 +1,10 @@
 {{ define "main" }}
 <div>
-    <h1>Tags: {{ .Title }}</h1>
+    <h1>{{ .Title }}</h1>
 <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
     <ul>
     {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> - {{ .Params.tags }}</li>
+        <li>{{ . }}</li>
     {{ end }}
     </ul>
 </div>

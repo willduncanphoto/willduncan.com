@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="singles">
+    <p>{{ .Type | upper }}</span></p>
+    <section class="date">
+        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006 3:04 PM MST" }}</a></p>
+    </section>
+    <section class="single-content">
+        {{ .Content }}
+    </section>
+    <section class="tags">
+    <ul>
+        {{ range .GetTerms "tags" }}
+        <li><a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a></li>
+        {{- end }}
+    </ul>
+    </section>
+</article>
+{{ end }}
