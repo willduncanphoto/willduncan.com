@@ -43,6 +43,3 @@ enableGitInfo = 'true'
  #   title = 'But a print'
  #   url = '/prints/'
  #   weight = 40
-
-  [frontmatter]
-    publishDate = ['publishDate', 'date']

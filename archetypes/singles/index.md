@@ -1,9 +1,10 @@
 ---
 title: "{{ now.Unix }}"
 date: {{ .Date }}
+publishDate: 
 draft: true
 tags: ['photo', 'singles']
-post_id: {{ now.Unix }}
-photoID: ""
+postID: "{{ now.Unix }}"
+photoID: 
 ---
 {{< cfimg >}}
