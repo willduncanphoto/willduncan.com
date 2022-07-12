@@ -19,6 +19,14 @@ enableGitInfo = 'true'
   links = ':year/:month/:day/:title/'
   '/' = '/:slug/'
 
+
+
+[frontmatter]
+  date = ['date', 'publishDate', 'lastmod']
+  expiryDate = ['expiryDate']
+  lastmod = [':git', 'lastmod', 'date', 'publishDate']
+  publishDate = ['publishDate', 'date']
+
 [menu]
   [[menu.main]]
     name = 'Posts'

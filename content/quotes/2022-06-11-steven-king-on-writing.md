@@ -1,9 +1,10 @@
 ---
 title: "Stephen King, On Writing"
 date: 2022-06-11T22:33:18-07:00
+publishDate: 2022-06-12T22:33:18-07:00
 draft: false
 link: "https://bookshop.org/a/10698/9781982159375"
-tags: ['wisdom']
+tags: ['quotes']
 ---
 > “The scariest moment is always just before you start.” 
 
