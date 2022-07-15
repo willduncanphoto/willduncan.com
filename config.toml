@@ -17,12 +17,13 @@ enableGitInfo = 'true'
   singles = ':year/:month/:day/:title/'
   quotes = ':year/:month/:day/:title/'
   links = ':year/:month/:day/:title/'
+  copy = ':year/:month/:day/:title/'
   '/' = '/:slug/'
 
 
 
 [frontmatter]
-  date = ['date', 'publishDate', 'lastmod']
+  date = ['publishDate', 'date', 'lastmod']
   expiryDate = ['expiryDate']
   lastmod = [':git', 'lastmod', 'date', 'publishDate']
   publishDate = ['publishDate', 'date']
@@ -40,14 +41,14 @@ enableGitInfo = 'true'
     url = '/about/'
     weight = 20
 
-#  [[menu.main]]
-#    name = 'Projects'
-#    title = 'projects'
-#    url = '/projects/'
-#    weight = 30
+# [[menu.main]]
+#   name = 'Projects'
+#   title = 'projects'
+#   url = '/projects/'
+#   weight = 30
 
- # [[menu.main]]
- #   name = 'Buy a print'
- #   title = 'But a print'
- #   url = '/prints/'
- #   weight = 40
+# [[menu.main]]
+#   name = 'Buy a print'
+#   title = 'But a print'
+#   url = '/prints/'
+#   weight = 40

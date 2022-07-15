@@ -3,7 +3,7 @@
     <p>{{ .Type | upper }}</span></p>
     <section class="article-data">
         <ul>
-            <li>{{ .Date | time.Format "January 2, 2006 3:04 PM MST" }}</li>
+            <li>{{ .PublishDate | time.Format "January 2, 2006 3:04 PM MST" }}</li>
             <li>{{ .FuzzyWordCount }} words</li>
             <li>{{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }}</li>
         </ul>

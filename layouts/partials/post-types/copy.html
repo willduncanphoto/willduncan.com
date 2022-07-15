@@ -1,6 +1,6 @@
 <article class="copy">
     <section>
-        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
+        <p><a href="{{ .RelPermalink }}">{{ .PublishDate | time.Format "January 2, 2006" }}</a></p>
     </section>
     <h1>{{ .Title | title }}</h1>
     <section>
