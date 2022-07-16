@@ -3,6 +3,12 @@
         <p><a href="{{ .RelPermalink }}">{{ .PublishDate | time.Format "January 2, 2006" }}</a></p>
     </section>
     <h1>{{ .Title | title }}</h1>
+    <section class="article-data">
+        <ul>
+            <li>{{ .FuzzyWordCount }} words</li>
+            <li>{{ .ReadingTime }} {{ if eq .ReadingTime 1 }} minute {{ else }} minutes {{ end }}</li>
+        </ul>
+    </section>
     <section>
     {{ .Content }}
     </section>
