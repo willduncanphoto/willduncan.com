@@ -1,6 +1,6 @@
 <article class="singles">
     <section class="date">
-        <p><a href="{{ .RelPermalink }}">{{ .Date | time.Format "January 2, 2006" }}</a></p>
+        <p><a href="{{ .RelPermalink }}">{{ .PublishDate | time.Format "January 2, 2006" }}</a></p>
     </section>
     <section class="single-content">
         {{ .Content }}
