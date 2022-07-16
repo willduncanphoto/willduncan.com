@@ -1,7 +1,7 @@
 {{ define "main" }}
-{{ range .Site.RegularPages }}
+{{ range where .Site.RegularPages "Type" "in" site.Params.postTypes }}
 <article>
-<p>{{ .PublishDate | time.Format "January 2, 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+    <p>{{ .PublishDate | time.Format "January 2, 2006" }} - <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
 </article>
 {{ end }}
 {{ end }}
