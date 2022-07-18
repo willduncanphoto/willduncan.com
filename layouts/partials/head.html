@@ -6,6 +6,12 @@
 {{ $style := resources.Get "css/main.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.willduncan.com">
+<meta property="og:title" content="OG Title">
+<meta property="og:description" content="OG Caption">
+<meta property="og:image" content="https://imagedelivery.net/0KE9fI8HU0iXQd54xFyZqw/5f6807a7e98e88055240f879d2f71b53/twittercard">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@coldwaterchapel">
 <meta name="twitter:creator" content="@willduncanphoto">
