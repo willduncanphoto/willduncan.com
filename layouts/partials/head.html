@@ -6,11 +6,16 @@
 {{ $style := resources.Get "css/main.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
+
 <meta property="og:type" content="article">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:image" content="https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=800">
 <meta property="og:description" content="{{ .Page.Params.caption | safeHTML }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:article:author" content="William Duncan">
+<meta property="oh:article:section" content="Singles">
+
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@coldwaterchapel">
