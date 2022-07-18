@@ -5,3 +5,10 @@
 <meta name="description" content="{{ .Site.Params.description }}">
 {{ $style := resources.Get "css/main.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@coldwaterchapel">
+<meta name="twitter:creator" content="@willduncanphoto">
+<meta name="twitter:title" content="Title">
+<meta name="twitter:description" content="This is a caption. There is no caption like it, because this caption is mine.">
+<meta name="twitter:image" content="https://imagedelivery.net/0KE9fI8HU0iXQd54xFyZqw/5f6807a7e98e88055240f879d2f71b53/twittercard">

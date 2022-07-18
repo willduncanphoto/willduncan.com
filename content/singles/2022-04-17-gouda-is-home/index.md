@@ -5,6 +5,6 @@ draft: false
 tags: ['gouda']
 post_id: 1656404952
 photoID: "851985fd-1e37-4fa7-def3-74147a9bc900"
-caption: "Welcome home, Gouda."
+caption: "Welcome home, Gouda!"
 ---
 {{< cfimg >}}
