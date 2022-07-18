@@ -6,5 +6,6 @@ draft: false
 tags: ['gouda']
 postID: "1657955510"
 photoID: 047893b5-3907-4d5b-6c5e-62b9ed6b8f00
+caption: Gouda, Coal Creek Supply.
 ---
 {{< cfimg >}}

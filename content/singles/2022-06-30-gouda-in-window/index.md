@@ -6,5 +6,6 @@ draft: false
 tags: ['gouda']
 postID: 1657953594
 photoID: 31e542e7-3c2c-48a2-1565-0b136e02c900
+caption: Gouda on the lookout.
 ---
 {{< cfimg >}}
