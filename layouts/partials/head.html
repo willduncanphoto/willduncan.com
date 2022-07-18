@@ -6,11 +6,11 @@
 {{ $style := resources.Get "css/main.css" | minify | fingerprint -}}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.willduncan.com">
-<meta property="og:title" content="OG Title">
-<meta property="og:description" content="OG Caption">
-<meta property="og:image" content="https://imagedelivery.net/0KE9fI8HU0iXQd54xFyZqw/85579d4c-514e-4466-d0ed-3ea12ff73200/twittercard">
+<meta property="og:type" content="photo">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ .Page.Params.caption | safeHTML }}">
+<meta property="og:image" content="https://coldwaterchapel.com/cdn-cgi/imagedelivery/{{ .Site.Params.cloudflareID }}/{{.Page.Params.photoID}}/w=800">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@coldwaterchapel">
