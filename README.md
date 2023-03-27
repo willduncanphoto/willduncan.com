@@ -9,7 +9,7 @@ Cloudflare/Netlify require `TZ = ` to display correct timezone formatting when u
 
 Netlify
 ```
-HUGO_VERSION = 0.101.0
+HUGO_VERSION = 0.111.3
 TZ = /usr/share/zoneinfo/America/Los_Angeles
 ```
 
